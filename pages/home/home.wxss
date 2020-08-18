@@ -1,1 +1,19 @@
-/* pages/home/home.wxss */
+/* .home */
+.home .main {
+  padding: 0 16px;
+}
+/* 搜索区域 */
+.home .main .search image {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+.home .main .search text {
+  font-size: 14px;
+  text-align: left;
+  color: #ababab;
+}
+/* 轮播图 */
+/* 推荐课程 */
+/* 热门视频 */
+/* 底部 */

@@ -1,2 +1,13 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="home">
+	<view class="main">
+		<!-- 搜索区域 -->
+		<view class="search">
+			<image src="../../assets/images/search_icon@2x.png"></image>
+			<text>请输入课程的名称</text>
+		</view>
+		<!-- 轮播图 -->
+		<!-- 推荐课程 -->
+		<!-- 热门视频 -->
+		<!-- 底部 -->
+	</view>
+</view>
