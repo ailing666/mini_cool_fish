@@ -14,6 +14,17 @@
   color: #ababab;
 }
 /* 轮播图 */
+.home swiper {
+  width: 343px;
+  height: 170px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.home swiper image {
+  width: 343px;
+  height: 170px;
+}
 /* 推荐课程 */
 /* 热门视频 */
 /* 底部 */

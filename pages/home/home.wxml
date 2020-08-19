@@ -6,6 +6,17 @@
 			<text>请输入课程的名称</text>
 		</view>
 		<!-- 轮播图 -->
+
+		<swiper indicator-dots autoplay indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff">
+			<block wx:for="{{swiperList}}">
+				<swiper-item>
+					<image src="{{item.img_url}}"></image>
+				</swiper-item>
+
+			</block>
+
+		</swiper>
+
 		<!-- 推荐课程 -->
 		<!-- 热门视频 -->
 		<!-- 底部 -->
