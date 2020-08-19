@@ -1,5 +1,5 @@
 <view class="course">
-	<view class="course-content" wx:for="{{courseList}}" wx:key="id">
+	<view class="course-content" wx:for="{{courseList}}" wx:key="id" bindtap="toDetails" data-id="{{item.id}}">
 		<image src="{{item.icon}}"></image>
 		<view class="title">{{item.title}}</view>
 		<view class="subtitle">{{item.subtitle}}</view>

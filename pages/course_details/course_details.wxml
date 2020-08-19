@@ -1,0 +1,23 @@
+<view class="course_detaily">
+	<view class="detaily">
+		<!-- 播放区域 -->
+		<view class="video">
+			<!-- 视频 -->
+			<video wx:if="{{isPlay}}" src="{{detailsList.course_video_url}}" autoplay></video>
+			<!-- 封面 -->
+			<view wx:else class="default-cover">
+				<image class="cover" src="../../assets/images/cover.png"></image>
+				<view class="play-icon" bindtap="playVideo">
+					<image src="../../assets/images/play@2x.png"></image>
+					<text >播放课程简介</text>
+				</view>
+			</view>
+		</view>
+		<view class="title">{{detailsList.title}}</view>
+		<view class="introduction">{{detailsList.introduction}}</view>
+		<view class="star">
+			<text class="study-count"></text>
+		</view>
+	</view>
+	<view class="start"></view>
+</view>

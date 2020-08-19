@@ -4,19 +4,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    courseList: [],
-    levelList: ['初级课程', '中级课程', '高级课程']
+    id: '',
+    isPlay: false,
+    detailsList: []
   },
-  toDetails (event) {
-    let id = event.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '/pages/course_details/course_details?id=' + id
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      id: options.id
+    })
     this.getCourseList()
   },
   async getCourseList () {
@@ -24,7 +23,12 @@ Page({
       url: '/api/course/list'
     })
     this.setData({
-      courseList: res.message
+      detailsList: res.message.find(item => item.id == this.data.id)
+    })
+  },
+  playVideo () {
+    this.setData({
+      isPlay: true
     })
   },
   /**
