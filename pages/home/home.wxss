@@ -2,6 +2,13 @@
 .home .main {
   padding: 0 16px;
 }
+/* 公共 */
+.title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #212121;
+  margin: 10px 0;
+}
 /* 搜索区域 */
 .home .main .search image {
   width: 32px;
@@ -26,5 +33,57 @@
   height: 170px;
 }
 /* 推荐课程 */
+.home .course .course-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .course .course-top .course-img {
+  width: 24px;
+  height: 24px;
+}
+.home .course .body {
+  overflow-x: auto;
+}
+.home .course .body .scroll-body {
+  display: flex;
+}
+.home .course .body .scroll-body view {
+  width: 148px;
+  flex-shrink: 0;
+  margin: 10px 10px 20px 0;
+}
+.home .course .body .scroll-body image {
+  width: 148px;
+  height: 84px;
+  border-radius: 6px;
+}
+
 /* 热门视频 */
+.home .hot .hot-viedo {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home .hot .hot-viedo image {
+  width: 162px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.home .hot .hot-viedo .name {
+  width: 162px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  text-align: left;
+  color: #262626;
+}
+.home .hot .hot-viedo .watch {
+  font-size: 9px;
+  color: #959595;
+}
 /* 底部 */

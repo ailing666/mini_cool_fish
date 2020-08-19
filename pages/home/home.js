@@ -4,7 +4,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: []
+    swiperList: [],
+    courseList: [],
+    hotViedoList: []
   },
 
   /**
@@ -12,16 +14,33 @@ Page({
    */
   onLoad: function (options) {
     this.getSwiperList()
+    this.getCourseList()
+    this.getHotVideoList()
   },
   async getSwiperList () {
-    let data = await request({
+    let res = await request({
       url: '/api/home/swipers'
     })
-    console.log(data.message)
     this.setData({
-      swiperList: data.message
+      swiperList: res.message
     })
-    console.log(this.swiperList)
+  },
+  async getCourseList () {
+    let res = await request({
+      url: '/api/home/course'
+    })
+    this.setData({
+      courseList: res.message
+    })
+  },
+  async getHotVideoList () {
+    let res = await request({
+      url: '/api/home/video'
+    })
+    console.log(res)
+    this.setData({
+      hotViedoList: res.message
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
