@@ -1,2 +1,8 @@
-<!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<view class="course">
+	<view class="course-content" wx:for="{{courseList}}" wx:key="id">
+		<image src="{{item.icon}}"></image>
+		<view class="title">{{item.title}}</view>
+		<view class="subtitle">{{item.subtitle}}</view>
+		<view class="level">{{levelList[item.level-1]}}</view>
+	</view>
+</view>
