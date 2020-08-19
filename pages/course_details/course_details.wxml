@@ -13,11 +13,23 @@
 				</view>
 			</view>
 		</view>
-		<view class="title">{{detailsList.title}}</view>
-		<view class="introduction">{{detailsList.introduction}}</view>
-		<view class="star">
-			<text class="study-count"></text>
+		<view class="card">
+			<view class="title">{{detailsList.title}}
+				<text>￥{{detailsList.price}}</text>
+			</view>
+			<view class="introduction">{{detailsList.introduction}}</view>
+			<view class="star">
+				<image wx:for="{{detailsList.score}}" wx:key="*this" src="../../assets/images/star_fill@2x.png"></image>
+				<image wx:for="{{5-detailsList.score}}" wx:key="*this" src="../../assets/images/star_empty@2x.png"></image>
+				<text class="study-count">{{detailsList.study_count}}人在学</text>
+			</view>
+			<view class="btn">
+				<image src="../../assets/images/start_study@2x.png"></image>
+				<image src="../../assets/images/share@2x.png"></image>
+			</view>
+
 		</view>
+
 	</view>
 	<view class="start"></view>
 </view>
