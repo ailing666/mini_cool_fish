@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/home/home", "pages/course/course","pages/course_details/course_details","pages/study/study","pages/my/my","pages/logs/logs"],
+  "pages": ["pages/home/home", "pages/course/course","pages/course_details/course_details","pages/study/study","pages/my/my","pages/login/login","pages/phone/phone","pages/logs/logs"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

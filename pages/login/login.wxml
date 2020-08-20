@@ -1,0 +1,14 @@
+<view class="login">
+	<view class="top">
+		<image class="logo" src="../../assets/images/logo@2x.png"></image>
+		<text >酷丁鱼在线课堂</text>
+		<text>—— 陪伴从心开始 ——</text>
+	</view>
+	<view class="center">
+		<image src="../../assets/images/wx_login@2x.png"></image>
+		<view>手机号码登录</view>
+	</view>
+	<text class="buttom">
+		Copyright © 2019 酷丁鱼在线课堂
+	</text>
+</view>
